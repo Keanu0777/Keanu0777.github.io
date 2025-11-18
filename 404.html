@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Keanu Laurence Luca</title>
+  <meta name="description" content="The page you are looking for could not be found. Return to Keanu's homepage or explore selected work.">
+  <link rel="stylesheet" href="static/styles/mainstyle.css">
+  <link rel="icon" type="image/png" href="static/img/icon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="static/img/icon.png" sizes="16x16">
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, rgba(4, 4, 4, 0.25), #040404),
+        url('static/img/LogoNewLarge.png') center/220px no-repeat;
+    }
+
+    .error-card {
+      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 32px;
+      padding: 60px 40px;
+      max-width: 520px;
+      width: calc(100% - 40px);
+      text-align: center;
+      color: #f7f7f7;
+    }
+
+    .error-card h1 {
+      font-size: clamp(40px, 6vw, 64px);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .error-card p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: rgba(247, 247, 247, 0.85);
+      margin-bottom: 30px;
+    }
+
+    .pill-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .pill-actions a {
+      text-decoration: none;
+      border: 1px solid #f7f7f7;
+      border-radius: 999px;
+      padding: 12px 28px;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #f7f7f7;
+      transition: background 200ms ease, color 200ms ease;
+    }
+
+    .pill-actions a.primary {
+      background: #f7f7f7;
+      color: #040404;
+    }
+
+    .pill-actions a:hover {
+      background: #f7f7f7;
+      color: #040404;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-card">
+    <p class="work-section-eyebrow">404 — OFF TRACK</p>
+    <h1>Signal Lost</h1>
+    <p>This page doesn’t exist or has moved. Jump back to Keanu’s home base or dive straight into the work archive.</p>
+    <div class="pill-actions">
+      <a class="primary" href="index.html">Return Home</a>
+      <!-- <a href="work.html">View Work</a> -->
+    </div>
+  </div>
+</body>
+
+</html>
+

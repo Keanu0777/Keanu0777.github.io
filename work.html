@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keanu Portfolio</title>
+    <meta name="description" content="Explore featured projects, performances, and creative direction by Keanu Laurence Luca.">
+    <link rel="canonical" href="https://1-earth.github.io/CLIENTWORK-TEMPORARY/Keanu/work.html">
+    <meta property="og:site_name" content="Keanu Laurence Luca">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Keanu Laurence Luca — Selected Work">
+    <meta property="og:description" content="Projects, DJ sets, and creative direction selected by Keanu Laurence Luca.">
+    <meta property="og:url" content="https://1-earth.github.io/CLIENTWORK-TEMPORARY/Keanu/work.html">
+    <meta property="og:image" content="https://1-earth.github.io/CLIENTWORK-TEMPORARY/Keanu/static/img/LogoNewLarge.png">
+    <meta property="og:image:alt" content="Keanu Laurence Luca wordmark">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Keanu Laurence Luca — Selected Work">
+    <meta name="twitter:description" content="View highlighted performances, collaborations, and creative direction projects.">
+    <meta name="twitter:image" content="https://1-earth.github.io/CLIENTWORK-TEMPORARY/Keanu/static/img/LogoNewLarge.png">
+    <script>
+      (function () {
+        var msg = "Coded by 'George Symonds (link: https://www.instagram.com/georgesymonds_/ )' through '🌐 1 Earth Productions 2025 (link: https://www.1-earth.world/ )'";
+        try { console.log(msg); } catch (_) { }
+      })();
+    </script>
+    <link rel="stylesheet" href="static/styles/mainstyle.css">
+    <link rel="icon" type="image/png" href="static/img/icon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="static/img/icon.png" sizes="16x16">
+    <style>
+       
+    </style>
+
+    <style>
+      .control-icon-btn, .cta-live-btn{
+        color: #000;
+        border-color: #000;
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      @media (max-width: 768px)
+        {.cta-live-btn{
+          display: none;
+        }
+      }
+    </style>
+</head>
+
+<body>
+
+    <script>(function(){ try{ document.documentElement.classList.add('is-loading'); }catch(_){ } })();</script>
+    <div class="loading-overlay" role="status" aria-live="polite">
+        <a class="loading-logo" href="index.html" aria-label="Home">
+            <img class="logo-img-small" src="static/img/LogoNewLarge.png" alt="Keanu logo">
+        </a>
+        <div class="loading-center">
+            <img class="loading-spinner" src="static/img/loading.gif" loading="eager" decoding="async" alt="" aria-hidden="true">
+            <div class="loading-text">Loading.</div>
+        </div>
+    </div>
+
+    <!-- Fullscreen hamburger overlay menu (same as index, links route back to index sections) -->
+    <div class="menu-overlay" aria-hidden="true" role="dialog" aria-label="Site menu">
+        <div class="overlay-center">
+            <div class="overlay-logo">
+                <img src="static/img/LogoNewLarge.png" alt="Keanu logo" class="overlay-logo-img">
+            </div>
+            <nav class="overlay-nav" aria-label="Main">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="index.html#dj" class="menu-link" data-target="dj">DJ</a></li>
+                    <li class="menu-item"><a href="index.html#producer" class="menu-link" data-target="producer">PRODUCER</a></li>
+                    <li class="menu-item"><a href="index.html#creative-director" class="menu-link" data-target="creative-director">CREATIVE DIRECTOR</a></li>
+                    <li class="menu-item"><a href="index.html#contact" class="menu-link" data-target="contact">CONTACT</a></li>
+                </ul>
+                <div class="menu-social">
+                    <a class="icon-btn" target="_blank" rel="noopener" href="https://www.instagram.com/keanulaurenceluca/" aria-label="Instagram">
+                        <img src="static/img/icon-instagram-white.svg" alt="Instagram">
+                    </a>
+                    <a class="icon-btn" target="_blank"  rel="noopener" href="https://open.spotify.com/artist/2DLHZ28eAcr6zDVYqlujDq?si=7Ceg13E0QzuzoEqwZhU6Sg" aria-label="Spotify">
+                        <img src="static/img/spotifyicon.png" width="15" height="15" alt="Spotify">
+                    </a>
+                    <a class="icon-btn" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCV5C7Pa3zvjafTTE7fNdXzQ" aria-label="Youtube">
+                        <img src="static/img/icon-youtube-white.svg" alt="Youtube">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- fixed background media -->
+    <!-- <div class="sticky-background-media">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="static/video/background.mp4" type="video/mp4" >
+        </video>
+    </div> -->
+
+    <script src="static/scripts/sticky-logo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+    <script>
+    // Minimal loading overlay controller for work page (locks scroll, reveals on content readiness)
+    (function(){
+      function qs(sel){ return document.querySelector(sel); }
+      function isSlow(){
+        try {
+          var nc = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+          if (!nc) return false;
+          return !!nc.saveData || /^(slow-2g|2g|3g)$/i.test(nc.effectiveType || '');
+        } catch(_){ return false; }
+      }
+      function firstHeroMedia(){
+        var root = document.querySelector('.work-content') || document.getElementById('work-content') || document;
+        if (!root) return null;
+        var v = root.querySelector('video'); if (v) return v;
+        var img = root.querySelector('img'); if (img) return img;
+        return null;
+      }
+      function waitMediaReady(el, capMs){
+        return new Promise(function(resolve){
+          if (!el){ resolve(); return; }
+          // Shorter timeout - if media isn't ready quickly, just proceed
+          var to = setTimeout(done, Math.max(300, capMs || 800));
+          function cleanup(){ try{ el.removeEventListener('canplay', onCanPlay); el.removeEventListener('loadeddata', onCanPlay); el.removeEventListener('load', onLoad); el.removeEventListener('error', onLoad); }catch(_){ } clearTimeout(to); }
+          function done(){ cleanup(); resolve(); }
+          function onCanPlay(){ done(); }
+          function onLoad(){ done(); }
+          if (el.tagName === 'VIDEO'){
+            // Check if already ready
+            if (el.readyState >= 2){ done(); return; }
+            // Also check if already loaded enough
+            if (el.readyState >= 1){ done(); return; }
+            el.addEventListener('canplay', onCanPlay, { once: true });
+            el.addEventListener('loadeddata', onCanPlay, { once: true });
+            el.addEventListener('error', done, { once: true });
+          } else {
+            // Check if already complete
+            if (el.complete){ done(); return; }
+            el.addEventListener('load', onLoad, { once: true });
+            el.addEventListener('error', onLoad, { once: true });
+          }
+        });
+      }
+      function animateText(el){ var n = 1; return setInterval(function(){ n = (n % 3) + 1; if (el){ el.textContent = 'Loading' + '.'.repeat(n); } }, 400); }
+      function reveal(overlay){
+        if (reveal._done) return;
+        reveal._done = true;
+        try { document.documentElement.classList.remove('is-loading'); } catch(_){ }
+        if (!overlay) return;
+        overlay.classList.add('fade-out');
+        setTimeout(function(){ if (overlay && overlay.parentNode){ overlay.parentNode.removeChild(overlay); } }, 380);
+      }
+      function kick(){
+        var overlay = qs('.loading-overlay'); if (!overlay) return;
+        // Ensure GIF spinner always animates
+        try {
+          var sp = overlay.querySelector('.loading-spinner');
+          if (sp && sp.tagName === 'IMG' && sp.src){
+            var base = sp.src;
+            base = base.replace(/([?&])r=\d+(&)?/, function(_, a, b){ return b ? a : ''; }).replace(/[?&]$/, '');
+            sp.src = base + (base.indexOf('?')>-1 ? '&' : '?') + 'r=' + Date.now();
+          }
+        } catch(_){ }
+        var textEl = overlay.querySelector('.loading-text');
+        var timer = animateText(textEl);
+        var started = false;
+        function startOnce(){ if (started) return; started = true; run(); }
+        // Hard cap: ensure overlay hides after max wait (e.g., network stalls)
+        var hardTimer = setTimeout(function(){
+          if (!reveal._done){ clearInterval(timer); reveal(overlay); }
+        }, 2000);
+        var mediaSearchTimeout = null;
+        function run(){
+          var el = firstHeroMedia();
+          if (!el){
+            // If no media found after 500ms, just reveal (content is rendered)
+            if (!mediaSearchTimeout){
+              mediaSearchTimeout = setTimeout(function(){
+                if (!reveal._done){
+                  clearInterval(timer);
+                  clearTimeout(hardTimer);
+                  reveal(overlay);
+                }
+              }, 500);
+            }
+            setTimeout(run, 60);
+            return;
+          }
+          // Clear the search timeout since we found media
+          if (mediaSearchTimeout){ clearTimeout(mediaSearchTimeout); mediaSearchTimeout = null; }
+          var fast = !isSlow();
+          // Much shorter wait times - if media isn't ready quickly, proceed anyway
+          waitMediaReady(el, fast ? 600 : 400).then(function(){
+            clearInterval(timer);
+            clearTimeout(hardTimer);
+            if (mediaSearchTimeout) clearTimeout(mediaSearchTimeout);
+            reveal(overlay);
+          });
+        }
+        document.addEventListener('work:rendered', startOnce, { once: true });
+        // Start checking immediately, don't wait 700ms
+        setTimeout(startOnce, 100);
+      }
+      if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', kick); } else { kick(); }
+    })();
+    </script>
+
+
+    <div class="up-gradient-black-background">
+
+        <div class="landing-logo" aria-label="Logo placeholder">
+            <a href="index.html"><img class="logo-img-small" src="static/img/LogoNewLarge.png" alt="Keanu logo"></a>
+        </div>
+
+
+        <!-- Top navigation / hamburger -->
+        <div class="landing-top-row down-gradient-black-background">
+        <div class="top-controls" aria-label="Media controls">
+            <button class="control-btn control-icon-btn" aria-label="Mute or unmute">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true">
+                    <path d="M3 9v6h4l5 4V5L7 9H3z" fill="currentColor"></path>
+                    <path d="M16 9.5l4 4m0-4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </button>
+            <button class="control-btn control-pager-btn" aria-label="Skip backward or forward">
+                <svg viewBox="0 0 64 24" width="60" height="23" aria-hidden="true">
+                    <!-- left triangle -->
+                    <polygon data-dir="prev" points="12,12 22,6 22,18" fill="currentColor"><title>Previous</title></polygon>
+                    <!-- center dot -->
+                    <!-- <circle cx="32" cy="12" r="2" fill="currentColor"></circle> -->
+                    <!-- right triangle -->
+                    <polygon data-dir="next" points="52,12 42,6 42,18" fill="currentColor"><title>Next</title></polygon>
+                </svg>
+            </button>
+            <button class="control-btn cta-live-btn" aria-label="Live at Boiler Room">
+                <span class="cta-text">LIVE AT BOILER ROOM</span>
+                <span class="cta-arrow" aria-hidden="true">↗︎</span>
+            </button>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+        <!-- Bottom-aligned content bar -->
+        <!-- <div class="landing-bottom-row">
+            <div class="landing-logo" aria-label="Logo placeholder">
+                <img class="logo-img" src="static/img/LogoNewLarge.png" alt="Keanu logo">
+            </div>
+            <div class="landing-copy">
+                <h2>Multi-disciplinary creative and DJ who bridges music, art, and culture — known for delivering versatile, high-energy sets across diverse audiences.</h2>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- work container -->
+    <div class="work-container">
+
+
+        <div class="work-section-container no-border">
+            <div class="work-page-section">
+                <div id="work-content" class="loading">Loading…</div>
+            </div>
+                    <div class="work-section work-section-title-container">
+                        <h1 class="work-section-title ">Related Work:</h1>
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="work-body-container work-section" id="related-work-container">
+                    
+                    
+                    
+                </div>
+
+                <!-- <h1>DJ</h1> -->
+                <!-- <p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br><p>Work</p> <br><br><br> -->
+            </div>
+        </div>
+       
+        
+    </div>
+    
+    <script>
+    // Hamburger overlay toggle for work page (navigates to index sections)
+    (function(){
+      function qs(sel, root){ return (root||document).querySelector(sel); }
+      function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
+      var html = document.documentElement;
+      var hamburger = qs('.hamburger');
+      var overlay = qs('.menu-overlay');
+      if (!hamburger || !overlay) return;
+
+      function openMenu(){
+        overlay.classList.add('is-open');
+        hamburger.classList.add('is-active');
+        hamburger.setAttribute('aria-expanded','true');
+        overlay.setAttribute('aria-hidden','false');
+        html.classList.add('menu-open');
+      }
+      function closeMenu(){
+        overlay.classList.remove('is-open');
+        hamburger.classList.remove('is-active');
+        hamburger.setAttribute('aria-expanded','false');
+        overlay.setAttribute('aria-hidden','true');
+        html.classList.remove('menu-open');
+      }
+      function toggleMenu(){ if (overlay.classList.contains('is-open')) closeMenu(); else openMenu(); }
+
+      hamburger.addEventListener('click', function(e){ e.preventDefault(); toggleMenu(); });
+      overlay.addEventListener('click', function(e){ if (e.target === overlay) closeMenu(); });
+      document.addEventListener('keydown', function(e){ var k = e.key || e.code; if (k === 'Escape') closeMenu(); });
+
+      // Links route to index sections
+      $all('.menu-overlay .menu-link').forEach(function(a){
+        a.addEventListener('click', function(e){
+          // let normal navigation proceed
+          closeMenu();
+        });
+      });
+    })();
+    </script>
+    <script>
+    // Match pill border width to visually stretched titles (supports multiples)
+    (function(){
+      function sizeTitlePills(){
+        var containers = document.querySelectorAll('.work-section-title-container');
+        if (!containers.length) return;
+        containers.forEach(function(container){
+          var title = container.querySelector('.work-section-title');
+          if (!title) return;
+          var rect = title.getBoundingClientRect();
+          var cs = window.getComputedStyle(container);
+          container.style.width = rect.width + 'px';
+        });
+      }
+      window.addEventListener('load', sizeTitlePills);
+      window.addEventListener('resize', sizeTitlePills);
+      sizeTitlePills();
+    })();
+    </script>
+    
+    <script>
+    // Stretch pill button text while preserving pill borders
+    (function(){
+      function ensureWrapped(btn){
+        if (btn.querySelector('.btn-text-stretch')) return;
+        var txt = btn.textContent;
+        btn.textContent = '';
+        var span = document.createElement('span');
+        span.className = 'btn-text-stretch';
+        span.textContent = txt;
+        btn.appendChild(span);
+      }
+
+      function sizeButtons(){
+        var buttons = document.querySelectorAll('.pill-btn');
+        if (!buttons.length) return;
+        buttons.forEach(function(btn){
+          ensureWrapped(btn);
+          var span = btn.querySelector('.btn-text-stretch');
+          // Reset to natural width before measuring
+          btn.style.width = 'auto';
+          var rect = span.getBoundingClientRect();
+          var cs = window.getComputedStyle(btn);
+          var padL = parseFloat(cs.paddingLeft) || 10;
+          var padR = parseFloat(cs.paddingRight) || 10;
+          var borderL = parseFloat(cs.borderLeftWidth) || 0;
+          var borderR = parseFloat(cs.borderRightWidth) || 0;
+          btn.style.width = Math.ceil(rect.width + padL + padR + borderL + borderR) + 'px';
+        });
+      }
+
+      window.addEventListener('load', sizeButtons);
+      window.addEventListener('resize', sizeButtons);
+      sizeButtons();
+    })();
+    </script>
+    
+    <!-- Firebase SDK for loading posts dynamically -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+    // Dynamic Work Loader for Keanu
+    (function(){
+      var TARGET_USER_UID = 'iPzFRI8JYMSA1NyBDQu9dNpeZ0y1';
+
+      var firebaseConfig = {
+        apiKey: "AIzaSyBLhjeaX_vl5-7_I9xT1Ae9JMQnLlKCpX4",
+        authDomain: "one-earth-cms.firebaseapp.com",
+        projectId: "one-earth-cms",
+        storageBucket: "one-earth-cms.appspot.com",
+        messagingSenderId: "649151856539",
+        appId: "1:649151856539:web:3c5b6a1fe176a4f31ed347"
+      };
+
+      function safeInitFirebase(){
+        try {
+          if (!window.firebase) return false;
+          if (!firebase.apps || !firebase.apps.length){ firebase.initializeApp(firebaseConfig); }
+          return true;
+        } catch(_) { return !!window.firebase; }
+      }
+
+      function setMeta(selector, attr, value){
+        var el = document.querySelector(selector);
+        if (!el){
+          el = document.createElement('meta');
+          if (selector.indexOf('property=') !== -1){
+            var m = selector.match(/property=\"([^\"]+)\"/); if (m) el.setAttribute('property', m[1]);
+          } else if (selector.indexOf('name=') !== -1){
+            var n = selector.match(/name=\"([^\"]+)\"/); if (n) el.setAttribute('name', n[1]);
+          }
+          document.head.appendChild(el);
+        }
+        el.setAttribute(attr, value);
+      }
+
+      function updateSocialMeta(work, postId){
+        var title = (work && work.title) ? work.title : 'Work';
+        var desc = '';
+        try {
+          if (work && work.summary) desc = String(work.summary);
+          else if (work && work.subtitle) desc = String(work.subtitle);
+          else if (work && work.excerpt) desc = String(work.excerpt);
+        } catch(_){}
+        if (!desc) desc = 'Selected work';
+
+        var url = window.location.origin + window.location.pathname + '?id=' + encodeURIComponent(postId || '');
+
+        // Pick an image from featuredMedia or first media section
+        var image = '';
+        if (work && work.featuredMedia && work.featuredMedia.url){ image = work.featuredMedia.url; }
+        if (!image && work && work.sections){
+          try {
+            for (var i=0;i<work.sections.length;i++){
+              var s = work.sections[i];
+              var items = (s.items || s.blocks || []);
+              for (var j=0;j<items.length;j++){
+                var it = items[j];
+                if ((it.type === 'media' || it.blockType === 'media') && it.cachedMediaUrl){ image = it.cachedMediaUrl; break; }
+              }
+              if (image) break;
+            }
+          } catch(_){}
+        }
+
+        setMeta('meta[property="og:title"]', 'content', title);
+        setMeta('meta[property="og:description"]', 'content', desc);
+        setMeta('meta[property="og:url"]', 'content', url);
+        if (image) setMeta('meta[property="og:image"]', 'content', image);
+        setMeta('meta[name="twitter:title"]', 'content', title);
+        setMeta('meta[name="twitter:description"]', 'content', desc);
+        if (image) setMeta('meta[name="twitter:image"]', 'content', image);
+
+        var link = document.querySelector('link[rel="canonical"]');
+        if (!link){ link = document.createElement('link'); link.setAttribute('rel','canonical'); document.head.appendChild(link); }
+        link.setAttribute('href', url);
+        document.title = title + ' — Keanu';
+      }
+
+      function isVideoUrl(u){ return /\.(mp4|webm|ogg|mov|avi)(?:$|[?#])/i.test((u||'').split('?')[0]); }
+      function isImageUrl(u){ return /\.(png|jpe?g|webp|gif|avif)(?:$|[?#])/i.test((u||'').split('?')[0]); }
+
+      function renderMediaFromUrl(url, caption, poster){
+        if (!url) return '';
+        if (isVideoUrl(url)){
+          var posterAttr = poster ? ' poster="'+poster+'"' : '';
+          return '<div class="blog-media-frontend"><video class="blog-media-video" src="'+url+'"'+posterAttr+' controls></video>' + (caption?'<p class="blog-media-caption">'+caption+'</p>':'') + '</div>';
+        }
+        return '<div class="blog-media-frontend"><img class="blog-media-img" loading="lazy" src="'+url+'" alt="'+(caption||'Media')+'">' + (caption?'<p class="blog-media-caption">'+caption+'</p>':'') + '</div>';
+      }
+
+      function renderEmbed(block){
+        // Basic YouTube/SoundCloud/Spotify support; expects block.content as JSON or direct HTML
+        var c = block && block.content; if (!c) return '';
+        var data = null;
+        try { data = (typeof c === 'string') ? JSON.parse(c) : c; } catch(_) { return String(c); }
+        if (!data || !data.platform) return '';
+        var widthStyle = (data.width && data.width < 100) ? ' style="width:'+data.width+'%; margin:0 auto;"' : '';
+        if (data.platform === 'youtube'){
+          return '<div class="blog-embed-frontend youtube-embed-frontend"'+widthStyle+'><div class="embed-container"><iframe src="https://www.youtube.com/embed/'+data.embedId+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>';
+        }
+        if (data.platform === 'spotify'){
+          var h = (data.viewType === 'compact') ? '80' : '152';
+          return '<div class="blog-embed-frontend spotify-embed-frontend"'+widthStyle+'><div class="embed-container"><iframe src="https://open.spotify.com/embed/'+data.embedId+'?utm_source=generator&theme=0" frameborder="0" allowtransparency="true" allow="encrypted-media" style="height:'+h+'px; width: 100%; margin-bottom: 20px;"></iframe></div></div>';
+        }
+        if (data.platform === 'soundcloud'){
+          return '<div class="blog-embed-frontend soundcloud-embed-frontend"'+widthStyle+'><div class="embed-container"><iframe src="https://w.soundcloud.com/player/?url='+encodeURIComponent('https://soundcloud.com/'+data.embedId)+'" frameborder="0" allow="autoplay"></iframe></div></div>';
+        }
+        return '';
+      }
+
+      // Render a single block (supports media/subtitle/body/embed)
+      async function renderBlockAsync(db, block, TARGET_USER_UID){
+        if (!block) return '';
+        var type = block.blockType || block.type;
+        if (type === 'subtitle'){ return '<div class="blog-subtitle-frontend">'+(block.content||'')+'</div>'; }
+        if (type === 'body'){ return '<div class="blog-body-frontend">'+(block.content||'')+'</div>'; }
+        if (type === 'embed'){ return renderEmbed(block); }
+        if (type === 'media'){
+          if (block.cachedMediaUrl){ return renderMediaFromUrl(block.cachedMediaUrl, block.caption, block.poster); }
+          if (block.mediaId){
+            try {
+              var doc = await db.collection('users').doc(TARGET_USER_UID).collection('items').doc(block.mediaId).get();
+              if (doc.exists){
+                var media = doc.data();
+                if (media && media.files && media.files.length){
+                  var f = media.files[0];
+                  return renderMediaFromUrl(f.url, f.caption, f.poster);
+                }
+              }
+            } catch(_){}
+          }
+        }
+        return '';
+      }
+
+      // Render a two-column group
+      async function renderColumnGroup(db, columnGroup, TARGET_USER_UID){
+        if (!columnGroup) return '';
+        var left = (columnGroup.leftColumn || []).slice().sort(function(a,b){ return (a.order||0)-(b.order||0); });
+        var right = (columnGroup.rightColumn || []).slice().sort(function(a,b){ return (a.order||0)-(b.order||0); });
+        var ratio = columnGroup.columnRatio || { left: 50, right: 50 };
+        var leftW = (typeof ratio.left === 'number' ? ratio.left : 50);
+        var rightW = (typeof ratio.right === 'number' ? ratio.right : (100-leftW));
+
+        var html = '<div class="blog-column-group-frontend">';
+        html += '<div class="blog-column-frontend blog-column-left" style="width: calc('+leftW+'% - 5px);">';
+        for (var i=0;i<left.length;i++){
+          html += '<div class="blog-block-frontend blog-block-column">' + (await renderBlockAsync(db, left[i], TARGET_USER_UID)) + '</div>';
+        }
+        html += '</div>';
+        html += '<div class="blog-column-frontend blog-column-right" style="width: calc('+rightW+'% - 5px);">';
+        for (var j=0;j<right.length;j++){
+          html += '<div class="blog-block-frontend blog-block-column">' + (await renderBlockAsync(db, right[j], TARGET_USER_UID)) + '</div>';
+        }
+        html += '</div>';
+        html += '</div>';
+        return html;
+      }
+
+      async function renderModularBlogContent(db, work){
+        if (!work || !work.sections || !work.sections.length) return work && work.content ? work.content : '';
+        var html = '';
+        var sections = work.sections.slice().sort(function(a,b){ return (a.order||0)-(b.order||0); });
+        for (var si=0; si<sections.length; si++){
+          var sec = sections[si];
+          var items = (sec.items || sec.blocks || []);
+          if (!items.length) continue;
+          html += '<div class="blog-section-frontend">';
+          var sorted = items.slice().sort(function(a,b){ return (a.order||0)-(b.order||0); });
+          for (var ii=0; ii<sorted.length; ii++){
+            var it = sorted[ii];
+            var type = it.blockType || it.type;
+            if (type === 'column-group'){ html += await renderColumnGroup(db, it, TARGET_USER_UID); continue; }
+            if (type === 'subtitle'){ html += '<div class="blog-subtitle-frontend">'+(it.content||'')+'</div>'; continue; }
+            if (type === 'body'){ html += '<div class="blog-body-frontend">'+(it.content||'')+'</div>'; continue; }
+            if (type === 'embed'){ html += renderEmbed(it); continue; }
+            if (type === 'media'){
+              // Prefer cached url, else fetch by mediaId
+              if (it.cachedMediaUrl){ html += renderMediaFromUrl(it.cachedMediaUrl, it.caption, it.poster); continue; }
+              if (it.mediaId){
+                try {
+                  var doc = await db.collection('users').doc(TARGET_USER_UID).collection('items').doc(it.mediaId).get();
+                  if (doc.exists){
+                    var media = doc.data();
+                    if (media && media.files && media.files.length){
+                      var f = media.files[0];
+                      html += renderMediaFromUrl(f.url, f.caption, f.poster);
+                    }
+                  }
+                } catch(_){}
+              }
+            }
+          }
+          html += '</div>';
+        }
+        return html;
+      }
+
+      function pickThumbnailFromWork(work){
+        try {
+          if (work && work.featuredMedia){
+            var fm = work.featuredMedia;
+            if (fm.poster && isImageUrl(fm.poster)) return fm.poster;
+            if (fm.url && isImageUrl(fm.url)) return fm.url;
+          }
+          if (work && work.featuredImage && isImageUrl(work.featuredImage)) return work.featuredImage;
+          if (work && work.sections){
+            for (var i=0;i<Math.min(3, work.sections.length);i++){
+              var s = work.sections[i];
+              var items = (s.items || s.blocks || []);
+              for (var j=0;j<items.length;j++){
+                var it = items[j];
+                var url = it.cachedMediaUrl || (it.url || '');
+                if (url && isImageUrl(url)) return url;
+              }
+            }
+          }
+        } catch(_){ }
+        return '';
+      }
+
+      function simpleExcerpt(work){
+        try {
+          if (work && work.sections){
+            for (var i=0;i<work.sections.length;i++){
+              var s = work.sections[i];
+              var items = (s.items || s.blocks || []);
+              for (var j=0;j<items.length;j++){
+                var it = items[j];
+                var type = it.blockType || it.type;
+                if (type === 'body' && it.content){
+                  var div = document.createElement('div');
+                  div.innerHTML = it.content;
+                  var txt = (div.textContent || div.innerText || '').trim().replace(/\s+/g,' ');
+                  if (txt) return txt.length > 140 ? (txt.slice(0,140).trimEnd() + '…') : txt;
+                }
+              }
+            }
+          }
+        } catch(_){ }
+        return work && work.excerpt ? String(work.excerpt) : '';
+      }
+
+      function buildRelatedCardHtml(post){
+        var thumb = pickThumbnailFromWork(post);
+        var safeTitle = post.title || 'Untitled';
+        var desc = simpleExcerpt(post) || '';
+        var tagsCsv = post.keywords || post.tags || '';
+        var tags = [];
+        try { tags = tagsCsv.split(',').map(function(t){ return t.trim(); }).filter(Boolean); } catch(_){ tags=[]; }
+        var tagsHtml = tags.slice(0,3).map(function(t){ return '<span class="work-tag">'+t+'</span>'; }).join('');
+        var imgHtml = thumb ? '<img loading="lazy" src="'+thumb+'" alt="'+safeTitle+' thumbnail">' : '';
+        return ''+
+          '<a href="work.html?id='+ post.id +'" class="work-body-item" aria-label="View more about '+ safeTitle +'">'+
+            '<div class="work-media">'+ imgHtml + (tagsHtml ? ('<div class="work-tags">'+tagsHtml+'</div>') : '') + '</div>'+
+            '<h1 class="work-body-item-title">'+ safeTitle +'</h1>'+
+            '<p class="work-body-item-description">'+ (desc || '') +'</p>'+
+            '<span class="view-more-btn">View More... <span class="arrow" aria-hidden="true">↗︎</span></span>'+
+          '</a>';
+      }
+
+      async function renderRelatedWork(db, currentId){
+        var container = document.getElementById('related-work-container') || document.querySelector('.work-body-container');
+        if (!container) return;
+        try {
+          var snap = await db.collection('users').doc(TARGET_USER_UID)
+            .collection('items').where('type','==','blog').get();
+          var posts = [];
+          snap.forEach(function(doc){ if (doc.id !== currentId) posts.push(Object.assign({ id: doc.id }, doc.data())); });
+          if (!posts.length){ container.style.display = 'none'; return; }
+          // shuffle
+          for (var i=posts.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=posts[i]; posts[i]=posts[j]; posts[j]=t; }
+          var chosen = posts.slice(0,3);
+          container.innerHTML = chosen.map(buildRelatedCardHtml).join('');
+        } catch(_){ container.style.display = 'none'; }
+      }
+
+      async function bindPostPager(db, currentId){
+        try {
+          var pagerBtn = document.querySelector('.control-pager-btn');
+          if (!pagerBtn) return;
+          var leftPoly = pagerBtn.querySelector('polygon[data-dir="prev"]');
+          var rightPoly = pagerBtn.querySelector('polygon[data-dir="next"]');
+
+          var snap;
+          try {
+            snap = await db.collection('users').doc(TARGET_USER_UID)
+              .collection('items').where('type','==','blog').orderBy('datePosted','desc').get();
+          } catch(_){
+            snap = await db.collection('users').doc(TARGET_USER_UID)
+              .collection('items').where('type','==','blog').get();
+          }
+          var ids = [];
+          snap.forEach(function(doc){ ids.push(doc.id); });
+          if (ids.length < 2) return;
+          var idx = Math.max(0, ids.indexOf(currentId));
+          var prevId = ids[(idx - 1 + ids.length) % ids.length];
+          var nextId = ids[(idx + 1) % ids.length];
+
+          function goTo(id){ if (!id) return; window.location.href = 'work.html?id=' + encodeURIComponent(id); }
+
+          if (leftPoly) leftPoly.addEventListener('click', function(e){ e.stopPropagation(); goTo(prevId); });
+          if (rightPoly) rightPoly.addEventListener('click', function(e){ e.stopPropagation(); goTo(nextId); });
+          pagerBtn.addEventListener('click', function(e){
+            var rect = pagerBtn.getBoundingClientRect();
+            var x = e.clientX - rect.left;
+            if (x < rect.width / 2) goTo(prevId); else goTo(nextId);
+          });
+          document.addEventListener('keydown', function(e){
+            var k = e.key || e.code;
+            if (k === 'ArrowLeft'){ e.preventDefault(); goTo(prevId); }
+            else if (k === 'ArrowRight'){ e.preventDefault(); goTo(nextId); }
+          });
+        } catch(_){ }
+      }
+
+      function forceUnmute(video){
+        if (!video) return;
+        try {
+          video.muted = false;
+          video.removeAttribute('muted');
+        } catch(_){}
+      }
+
+      function mountVideoAutoplay(root){
+        var container = root || document.querySelector('.work-page-section');
+        if (!container) return;
+        var vids = container.querySelectorAll('video');
+        if (!('IntersectionObserver' in window)){
+          vids.forEach(function(v){
+            try {
+              forceUnmute(v);
+              v.setAttribute('playsinline','');
+              v.play();
+            } catch(_){ }
+          });
+          return;
+        }
+        var obs = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            var v = entry.target;
+            var inView = entry.isIntersecting;
+            try {
+              forceUnmute(v);
+              v.setAttribute('playsinline','');
+              if (inView) { v.play().catch(function(){}); } else { if (!v.paused) v.pause(); }
+            } catch(_){ }
+          });
+        }, { threshold: 0.5 });
+        vids.forEach(function(v){ obs.observe(v); });
+      }
+
+      // Desktop-only custom controls for blog-media videos (keeps native on mobile/iOS)
+      function mountCustomVideoUI(root){
+        var container = root || document;
+        if (!container) return;
+        var isSmall = false;
+        try { isSmall = window.matchMedia && window.matchMedia('(max-width: 768px)').matches; } catch(_){ }
+        var ua = (navigator.userAgent || '').toLowerCase();
+        var isIOS = /iphone|ipad|ipod/.test(ua) || (/macintosh/.test(ua) && 'ontouchend' in document);
+        if (isSmall || isIOS) return; // keep reliable native controls on mobile/iOS
+
+        var videos = container.querySelectorAll('.blog-media-frontend .blog-media-video');
+        videos.forEach(function(video){
+          if (!video || video._hasCustomUI) return;
+          video._hasCustomUI = true;
+
+          // Remove native controls on desktop
+          try { video.removeAttribute('controls'); } catch(_){ }
+
+          // Wrap
+          var wrapper = document.createElement('div');
+          wrapper.className = 'video-player';
+          var parent = video.parentNode;
+          parent.insertBefore(wrapper, video);
+          wrapper.appendChild(video);
+
+          // Controls bar
+          var controls = document.createElement('div');
+          controls.className = 'video-controls';
+          controls.innerHTML = ''+
+            '<button class="vp-btn vp-play" aria-label="Play/Pause" title="Play/Pause"><span class="vp-icon">►</span></button>'+
+            '<div class="vp-progress" aria-label="Seek" role="slider" tabindex="0"><div class="vp-progress-filled"></div></div>'+
+            '<div class="vp-time" aria-live="off">0:00 / 0:00</div>'+
+            '<button class="vp-btn vp-mute" aria-label="Mute/Unmute" title="Mute/Unmute"><span class="vp-icon">🔊</span></button>'+
+            '<input class="vp-volume" aria-label="Volume" title="Volume" type="range" min="0" max="1" step="0.05" value="1">'+
+            '<button class="vp-btn vp-full" aria-label="Fullscreen" title="Fullscreen"><span class="vp-icon">⤢</span></button>';
+          wrapper.appendChild(controls);
+
+          var btnPlay = controls.querySelector('.vp-play');
+          var btnMute = controls.querySelector('.vp-mute');
+          var btnFull = controls.querySelector('.vp-full');
+          var prog = controls.querySelector('.vp-progress');
+          var progFill = controls.querySelector('.vp-progress-filled');
+          var timeEl = controls.querySelector('.vp-time');
+          var vol = controls.querySelector('.vp-volume');
+
+          function fmt(t){
+            t = Math.max(0, t||0);
+            var m = Math.floor(t/60); var s = Math.floor(t%60); return m+':' + String(s).padStart(2,'0');
+          }
+
+          function refresh(){
+            try {
+              // play/pause icon
+              btnPlay.querySelector('.vp-icon').textContent = video.paused ? '►' : '❚❚';
+              // mute icon
+              btnMute.querySelector('.vp-icon').textContent = (video.muted || video.volume === 0) ? '🔊' : '🔇';
+              // time
+              var d = isFinite(video.duration) ? video.duration : 0;
+              var ct = isFinite(video.currentTime) ? video.currentTime : 0;
+              timeEl.textContent = fmt(ct) + ' / ' + fmt(d);
+              // progress
+              var pct = d ? (ct / d) * 100 : 0;
+              progFill.style.width = Math.max(0, Math.min(100, pct)) + '%';
+              // volume slider
+              if (!video.muted) { vol.value = (typeof video.volume === 'number' ? String(video.volume) : '1'); }
+              // show slider only when unmuted and volume > 0
+              var showVol = !video.muted && (video.volume || 0) > 0;
+              vol.style.display = showVol ? '' : 'none';
+              // controls visibility when paused
+              if (video.paused) { wrapper.classList.add('is-paused'); } else { wrapper.classList.remove('is-paused'); }
+            } catch(_){ }
+          }
+
+          // Event handlers
+          btnPlay.addEventListener('click', function(){ if (video.paused) { video.play().catch(function(){}); } else { video.pause(); } refresh(); });
+          btnMute.addEventListener('click', function(){ video.muted = !video.muted; refresh(); });
+          vol.addEventListener('input', function(){ var v = parseFloat(vol.value); if (!isNaN(v)){ video.volume = v; if (v > 0){ video.muted = false; } refresh(); } });
+
+          function seekTo(clientX){
+            var rect = prog.getBoundingClientRect();
+            var x = Math.max(0, Math.min(rect.width, clientX - rect.left));
+            var ratio = rect.width ? (x / rect.width) : 0;
+            if (isFinite(video.duration)) video.currentTime = ratio * video.duration;
+          }
+          prog.addEventListener('click', function(e){ seekTo(e.clientX); });
+          // keyboard on progress
+          prog.addEventListener('keydown', function(e){
+            var k = e.key || e.code; var step = 5; // seconds
+            if (k === 'ArrowLeft'){ e.preventDefault(); try { video.currentTime = Math.max(0, video.currentTime - step); } catch(_){ } }
+            if (k === 'ArrowRight'){ e.preventDefault(); try { video.currentTime = Math.min(video.duration||0, video.currentTime + step); } catch(_){ } }
+            refresh();
+          });
+
+          btnFull.addEventListener('click', function(){
+            var el = wrapper;
+            var d = document;
+            var fsEl = d.fullscreenElement || d.webkitFullscreenElement || d.mozFullScreenElement || d.msFullscreenElement;
+            function req(el){ (el.requestFullscreen||el.webkitRequestFullscreen||el.mozRequestFullScreen||el.msRequestFullscreen).call(el); }
+            function exit(){ (d.exitFullscreen||d.webkitExitFullscreen||d.mozCancelFullScreen||d.msExitFullscreen).call(d); }
+            try { if (fsEl){ exit(); } else { req(el); } } catch(_){ }
+          });
+
+          // keyboard shortcuts for wrapper
+          wrapper.addEventListener('keydown', function(e){
+            var k = e.key || e.code;
+            if (k === ' ' || k === 'Enter'){ e.preventDefault(); btnPlay.click(); }
+            if (k === 'm' || k === 'M'){ e.preventDefault(); btnMute.click(); }
+            if (k === 'f' || k === 'F'){ e.preventDefault(); btnFull.click(); }
+            if (k === 'ArrowLeft'){ e.preventDefault(); try { video.currentTime = Math.max(0, video.currentTime - 5); } catch(_){ } }
+            if (k === 'ArrowRight'){ e.preventDefault(); try { video.currentTime = Math.min(video.duration||0, video.currentTime + 5); } catch(_){ } }
+          });
+
+          // Sync UI with media events
+          video.addEventListener('play', refresh);
+          video.addEventListener('pause', refresh);
+          video.addEventListener('volumechange', refresh);
+          video.addEventListener('timeupdate', refresh);
+          video.addEventListener('loadedmetadata', refresh);
+
+          // Initial state
+          refresh();
+        });
+      }
+
+  // Ensure all <video> elements loop inside the given root (with a fallback)
+  function enableLoopingVideos(root){
+    var container = root || document;
+    var vids = container.querySelectorAll('video');
+    vids.forEach(function(v){
+      try {
+        v.loop = true;
+        v.setAttribute('loop','');
+        if (!v._loopHandlerAttached){
+          v.addEventListener('ended', function(){
+            try {
+              v.currentTime = 0;
+              v.play().catch(function(){});
+            } catch(_){ }
+          });
+          v._loopHandlerAttached = true;
+        }
+      } catch(_){ }
+    });
+  }
+  
+      function addLinkPreload(src, asType){
+        if (!src) return;
+        try {
+          var olds = document.querySelectorAll('link[rel="preload"][data-dyn-preload="1"]');
+          olds.forEach(function(n){ if (n && n.parentNode) n.parentNode.removeChild(n); });
+          var link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = asType || 'image';
+          link.href = src;
+          link.setAttribute('data-dyn-preload','1');
+          document.head.appendChild(link);
+        } catch(_){ }
+      }
+
+      async function run(){
+        var content = document.getElementById('work-content');
+        if (!content) return;
+
+        var params = new URLSearchParams(window.location.search);
+        var id = params.get('id');
+        if (!id){ content.innerHTML = '<div class="error">No work item specified</div>'; try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch(_){ } return; }
+
+        if (!safeInitFirebase() || !window.firebase){ content.innerHTML = '<div class="error">Unable to load content</div>'; try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch(_){ } return; }
+        var db = firebase.firestore();
+
+        try {
+          var snap = await db.collection('users').doc(TARGET_USER_UID).collection('items').doc(id).get();
+          if (!snap.exists){ content.innerHTML = '<div class="error">Work item not found</div>'; try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch(_){ } return; }
+          var work = snap.data();
+
+          // Preload hero media (poster/image preferred)
+          try {
+            var heroUrl = '';
+            var asType = 'image';
+            if (work && work.featuredMedia && work.featuredMedia.url){
+              heroUrl = work.featuredMedia.url;
+              asType = isVideoUrl(heroUrl) ? 'video' : 'image';
+            }
+            if (!heroUrl){ heroUrl = pickThumbnailFromWork(work); asType = 'image'; }
+            if (heroUrl) addLinkPreload(heroUrl, asType);
+          } catch(_){ }
+
+          // Build header (category badge, title, tags/date, divider)
+          var date = work.datePosted && work.datePosted.seconds ? new Date(work.datePosted.seconds*1000) : null;
+          var dateStr = date ? date.toLocaleDateString('en-GB') : '';
+          var tagsHtml = '';
+          if (work.tags){
+            try { tagsHtml = work.tags.split(',').map(function(t){ return t.trim(); }).filter(Boolean).map(function(t){ return '<span class="work-tag">'+t+'</span>'; }).join(''); } catch(_){ tagsHtml=''; }
+          }
+
+          var headerHtml = ''+
+            '<header class="work-header">'+
+              '<div class="work-title-row">'+
+                (work.category ? ('<span class="work-category-badge">'+work.category+'</span>') : '')+
+                '<h1 class="work-title">'+ (work.title || 'Untitled') +'</h1>'+
+              '</div>'+
+              '<div class="work-meta-row">'+
+                '<div class="work-tags-inline">'+ (tagsHtml || '') +'</div>'+
+                (dateStr ? ('<time class="work-date" datetime="'+ (date ? date.toISOString().slice(0,10) : '') +'">'+dateStr+'</time>') : '<span></span>')+
+              '</div>'+
+              
+            '</header>';
+
+          // Featured media if available
+          var mediaHtml = '';
+        //   if (work.featuredMedia && work.featuredMedia.url){ mediaHtml = renderMediaFromUrl(work.featuredMedia.url, work.featuredMedia.caption, work.featuredMedia.poster); }
+
+          var bodyHtml = await renderModularBlogContent(db, work);
+          content.innerHTML = headerHtml + '<div class="work-content">' + (mediaHtml || '') + bodyHtml + '</div>';
+
+          // Update meta
+          updateSocialMeta(work, id);
+
+          // Loop all videos inside the rendered content
+          enableLoopingVideos(content);
+          
+          // Autoplay videos in view
+          mountVideoAutoplay(content);
+          // Desktop-only custom controls for blog videos
+          mountCustomVideoUI(content);
+          // Render related work (3 random)
+          renderRelatedWork(db, id);
+          // Bind post pager navigation
+          bindPostPager(db, id);
+        } catch(e){
+          content.innerHTML = '<div class="error">Error loading work item</div>';
+        } finally {
+          content.classList.remove('loading');
+          try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch(_){ }
+        }
+      }
+
+      if (document.readyState === 'loading'){
+        document.addEventListener('DOMContentLoaded', run);
+      } else { run(); }
+    })();
+    </script>
+    
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="work-section-title-container footer-margin">
+                    <h1 class="work-section-title">Contact</h1>
+            </div>
+
+            <div class="footer-contact-container">
+                <div class="footer-contact-item">
+                    <h1 class="footer-contact-item-title"><a href="mailto:KEANULLMGMT@GMAIL.COM">KEANULLMGMT@GMAIL.COM</a></h1>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="icon-buttons" aria-label="Social links">
+                        <a class="icon-btn" href="https://www.instagram.com/keanulaurenceluca/  " target="_blank" rel="noopener" aria-label="Instagram">
+                            <img src="static/img/icon-instagram-white.svg" alt="Instagram">
+                        </a>
+                        <a class="icon-btn" href="https://open.spotify.com/artist/2DLHZ28eAcr6zDVYqlujDq?si=7Ceg13E0QzuzoEqwZhU6Sg" target="_blank" rel="noopener" aria-label="Spotify">
+                            <img src="static/img/spotifyicon.png" width="15" height="15" alt="Spotify">
+                        </a>
+                    <a class="icon-btn" href="https://www.youtube.com/channel/UCV5C7Pa3zvjafTTE7fNdXzQ" aria-label="Youtube">
+                            <img src="static/img/icon-youtube-white.svg" alt="Youtube">
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="footer-info-container">
+                <p class="footer-info-item-title">Keanu Laurence Luca © 2025 | Website Designed & Developed by 🌐 <a href="https://kr-net.work/?link=oneearth" target="_blank" rel="noopener">1 Earth Productions</a></p>
+            </div>
+
+            
+        </div>
+    </div>
+    
+</footer>
+
+
+
+</html>
