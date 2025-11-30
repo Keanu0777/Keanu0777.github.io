@@ -1289,22 +1289,44 @@
       }
 
       function init() {
-        collectItems();
-        if (!items.length) { return; }
-        // initial render
-        swapTo(0);
-        bindControls();
-        startAuto();
-        resetAutoResume();
-        updateMuteButton();
-        updateCtaForCurrent();
-        try { schedulePreloading(current); } catch (_) { }
-        // Scroll override
-        window.addEventListener('scroll', onScroll, { passive: true });
-        window.addEventListener('resize', onScroll);
-        // Ensure active state reflects current viewport on load
-        onScroll();
-        ensureMediaVisible();
+        // Retry logic to wait for DOM to be fully rendered
+        var retryCount = 0;
+        var maxRetries = 20; // ~2 seconds max wait (20 * 100ms)
+        function tryInit() {
+          collectItems();
+          if (items.length > 0) {
+            // Items found, proceed with initialization
+            swapTo(0);
+            bindControls();
+            startAuto();
+            resetAutoResume();
+            updateMuteButton();
+            updateCtaForCurrent();
+            try { schedulePreloading(current); } catch (_) { }
+            // Scroll override
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll);
+            // Ensure active state reflects current viewport on load
+            onScroll();
+            ensureMediaVisible();
+          } else if (retryCount < maxRetries) {
+            // Items not ready yet, retry after a short delay
+            retryCount++;
+            // Use requestAnimationFrame to wait for next paint, then setTimeout for additional delay
+            requestAnimationFrame(function() {
+              setTimeout(tryInit, 100);
+            });
+          } else {
+            // Max retries reached, update CTA with fallback message
+            var btn = document.querySelector('.cta-live-btn');
+            var textEl = btn ? btn.querySelector('.cta-text') : null;
+            if (textEl) {
+              textEl.textContent = 'No content available';
+              try { textEl.setAttribute('data-text', 'No content available'); textEl.setAttribute('data-base-text', 'No content available'); } catch (_) { }
+            }
+          }
+        }
+        tryInit();
       }
 
       function ready(fn) {
@@ -1317,7 +1339,12 @@
       ready(function () {
         var started = false;
         function startOnce() { if (!started) { started = true; init(); } }
-        document.addEventListener('work:rendered', startOnce, { once: true });
+        document.addEventListener('work:rendered', function() {
+          // Use requestAnimationFrame to ensure DOM is rendered before initializing
+          requestAnimationFrame(function() {
+            setTimeout(startOnce, 50); // Small delay to ensure DOM is fully updated
+          });
+        }, { once: true });
         // Re-collect items and resync when sections expand/collapse
         document.addEventListener('work:updated', function () {
           collectItems();
@@ -1328,8 +1355,18 @@
           onScroll();
           ensureMediaVisible();
         });
-        // In case content is already present (static), attempt after a tick
-        setTimeout(function () { if (!started) { collectItems(); if (items.length) { startOnce(); } } }, 600);
+        // In case content is already present (static) or event doesn't fire, attempt with retry
+        setTimeout(function () { 
+          if (!started) { 
+            collectItems(); 
+            if (items.length) { 
+              startOnce(); 
+            } else {
+              // If no items found, still try init (it has retry logic)
+              startOnce();
+            }
+          } 
+        }, 800);
       });
     })();
   </script>
@@ -1817,12 +1854,22 @@
             var posts = all.filter(function (p) { return (p.category || '').toLowerCase() === cat.toLowerCase(); });
             renderCategory(cat, posts);
           });
-          try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch (_) { }
+          // Wait for DOM to be fully rendered before dispatching event
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch (_) { }
+            });
+          });
         } catch (e) {
           // On error, show coming soon to avoid breaking layout
           CATEGORIES.forEach(function (cat) { renderCategory(cat, []); });
           // Optional: console.error('Error loading posts:', e);
-          try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch (_) { }
+          // Wait for DOM to be fully rendered before dispatching event
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              try { document.dispatchEvent(new CustomEvent('work:rendered')); } catch (_) { }
+            });
+          });
         }
       }
 
@@ -1997,7 +2044,7 @@
 
       <div class="footer-contact-container">
         <div class="footer-contact-item">
-          <h1 class="footer-contact-item-title"><a href="mailto:CONTACT@BYKEANU.COM">CONTACT@BYKEANU.COM</a></h1>
+          <h1 class="footer-contact-item-title"><a href="mailto:KEANULLMGMT@GMAIL.COM">KEANULLMGMT@GMAIL.COM</a></h1>
         </div>
         <div class="footer-contact-item">
           <div class="icon-buttons" aria-label="Social links">
